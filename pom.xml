@@ -37,12 +37,12 @@
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-api</artifactId>
-            <version>1.5.0</version>
+            <version>1.12.0</version>
         </dependency>
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-exporter-otlp</artifactId>
-            <version>1.5.0</version>
+            <version>1.12.0</version>
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
@@ -52,7 +52,7 @@
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-sdk</artifactId>
-            <version>1.5.0</version>
+            <version>1.12.0</version>
         </dependency>
     </dependencies>
 
@@ -68,6 +68,7 @@
                     </descriptorRefs>
                     <finalName>opentelemetry-aspect-${project.version}</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
+                    <classifier>jar</classifier>
                 </configuration>
                 <executions>
                     <execution>
